@@ -1,0 +1,19 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression suite 1" verbose="1" >
+<listeners>
+
+<listener class-name="com.orion.whitemartProject.customListener.Listener"/>
+
+</listeners>
+  <test name="TCOO1_testLogin" >
+    <classes>
+      <class name="com.orion.whitemartProject.testScripts"/>
+    </classes>
+ </test>
+</suite>
+
+
+
+
+
