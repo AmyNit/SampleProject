@@ -17,7 +17,7 @@ public class TC001_genericmethods extends TestBase{
 
 	@BeforeTest
 
-	public void testSetUp() {
+	public void testSetUp4() {
 
 		init();
 	}
