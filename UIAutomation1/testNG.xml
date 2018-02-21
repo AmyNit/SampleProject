@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite" preserve-order="true" parallel="classes" thread-count="2">
+
+<listeners>
+<!-- <listener class-name="com.test.automation.UIAutomation1.customListener.ListenerClass"></listener>  -->
+<listener class-name="com.test.automation.UIAutomation1.customListener.RetryListener"></listener>
+</listeners>
+
+<test name="LoginTest">
+<classes>
+
+<class name="com.test.autiomation.UIAutomation1.authenticationpage.TC001_loginWithInvalidData"></class>
+<!-- <class name="com.test.autiomation.UIAutomation1.authenticationpage.TC002_verfifyloginwithDifferentRecords"></class> -->
+</classes>
+</test>
+
+</suite>
