@@ -1,0 +1,222 @@
+
+PART 1:
+
+HTML
+<a href="/projects/" title="Selenium Projects">Projects</a>
+
+XPath
+//tagName[@attributeName='AttributeValue']
+
+//a[@href='/projects/']
+//a[@title='Selenium Projects']
+//a[@contains(text(),'Projects')]  --->if HTML contains text
+
+CSS
+tagName[attributeName='AttributeValue']
+a[href='/projects/']
+a[title='Selenium Projects']
+a[contains(text(),'Projects')]
+
+HTML
+<li id="menu_documentation">
+<a href="/docs/" title="Technical references and guides">Documentation</a>
+
+XPath
+//li[@id='menu_documentation']/a
+
+CSS
+li[id='menu_documentation']>a
+
+Note:// is the relative path
+      / is the absolute path
+ 
+      
+      
+PART 2:
+
+HTML
+<div id="mBody">
+ <div id="sidebar">
+ <script src="/analytics.js" type="text/javascript">
+ <div id="mainContent">
+  <h2>What is Selenium?</h2>
+ 
+XPath
+//div[@id='mainContent']/h2               --->locate 3 elements
+//div[@id='mainContent']/h2[1]            --->locate 1st one in 3 located elements
+//div[@id='mBody"']/div[2]/h2              --->locate 3  elements
+//div[@id='mBody"']/div[2]/h2[1]           --->locate 1st one in the 3 located elements 
+
+
+CSS
+#mainContent>:nth-child(1)               --->#id for CSS
+#mBody>:nth-child(3)>:nth-child(1)       --->locate 3rd div, locate 1st h2
+
+HTML
+<input id="q" name="q" accesskey="s" size="30" type="text">
+
+XPath
+//input[@id='q']
+//input[@id='q' and @type='text'] --->using more than one attribute to locate
+//input[@name='q']
+
+
+CSS
+input[id='q'] or #q
+input[id='q'][type='text']       ---->using more than one attribute to locate
+input[name='q']
+
+HTML
+<table id="choice">
+ <tbody>
+  <tr>
+   <td style="border-right: 1px solid #CCCCCC">
+    <center>
+     <h3>Selenium WebDriver</h3>             --->to locate this element
+      <a href="/projects/webdriver/">
+       <a href="/projects/webdriver/">
+        </center>
+         <br>
+        
+XPath
+//table[@id='choice']/tbody/tr/td/center/h3    --->highlights 2 elements
+//table[@id='choice']/tbody/tr/td[1]/center/h3 --->highlight right one
+//h3[contains(text(),'Selenium WebDriver')]
+
+CSS
+table[id='choice']>tbody>tr>td>center>h3 or #id>tbody>tr>td>center/>h3  --->highlights 2 elements
+table[id='choice']>tbody>tr>nth-child(1)>center>h3                      ---->highlights the right one
+
+
+
+
+PART 3:                              DYNAMIC XPath and CSS
+
+URL:https://www.facebook.com/
+
+HTML
+<input id="email" class="inputtext" name="email" tabindex="1" data-testid="royal_email" type="email">
+
+XPath
+//input[@id='email' and @class='inputtext' and @name="email]  --->combining attributes to locate elements
+
+CSS
+input[id='email'][class='inputtext'][name='email']          ---->combining attributes to locate elements
+
+HTML
+<input id="u_0_0" value="Log In" tabindex="4" 
+data-testid="royal_login_button" type="submit">
+
+XPath
+//input[@id='u_0_0']                              ---->dynamic attribute_value
+//input[starts-with(@id,'u')]                    ---->Starts-with function
+
+CSS
+input[id='u_0_0']                                ---->dynamic attribute_value
+input[id^='u']                                   ---->attribute_type^=attibute_value
+
+HTML
+<input id="u_0_9" class="inputtext _58mg _5dba _2ph-" 
+data-type="text" name="firstname" aria-required="1" 
+placeholder="" aria-label="First name" type="text">
+
+XPath
+//input[starts-with(id,'u')]                  ---->handling dynamic attribute_value(if starting value is constant)
+//input[starts-with(class,inputtext)]         ---->handling dynamic attribute_value
+
+CSS
+
+input[id^='u']                               ---->handling dynamic attribute_value(if starting value is constant)
+input[class^='inputtext']                    ---->handling dynamic attribute_value
+input[class$='inputtext']                    ---->handling dynamic attribute_value(if ending value is constant)
+
+
+
+
+
+PART 4:                 FOLLOWING SIBLING 
+
+.To identify the dynamic UI pages and the dynamic objects
+.Parent can have multiple childs(siblings-child element of the root)
+>Sibling concept can be used only at same level
+.2 types:Following siblings,preceding siblings
+
+>To check xpath in console type: $x("xpath")
+                                 $x("//select[@id='day']")
+                                 
+>If we have the object for 'day' and doesn't have the object for month(following sibling):
+
+-To get all following siblings of 'day':
+ $x("//select[@id='day']/following-sibling::*")
+ 
+-To get 1st following sibling of 'day':
+ $x("//select[@id='day']/following-sibling::select[1]")
+ 
+-To get 2nd following sibling of 'day':
+  $x("//select[@id='day']/following-sibling::select[2]")
+  
+
+ 
+ PART 5:             PRECEDING SIBLING
+ 
+ -To locate 'year':$x("//select[@id='year']")
+ -To locate 'month' which is 1st the preceding sibling: $x("//select[@id='year']/preceding-sibling::select[1]")
+ -To locate 'month' which is 2nd the preceding sibling: $x("//select[@id='year']/preceding-sibling::select[2]")
+ 
+ 
+
+PART 4:                 ASCENDANT AND DESCENDANT
+
+if parent element is known and the child element is unknown.
+
+URL: https://www.facebook.com/
+
+>First Name: XPath: //div[@id='reg_form_box']/child::div[1]/descendant::div[3]/descendant::div[1]/descendant::div[2]
+
+ 
+ .XPath for parent element:                        //div[@id='reg_form_box']
+ .XPath to get first child of parent:              //div[@id='reg_form_box']/child::div[1]
+ .XPath to get the 3rd descendant of first child:   //div[@id='reg_form_box']/child::div[1]/descendant::div[3]
+ .XPath to get 2nd descendant of 3rd descendant:    //div[@id='reg_form_box']/child::div[1]/descendant::div[3]/descendant::div[1]
+ 
+>Sur Name: XPath:   //div[@id='reg_form_box']/child::div[1]/child::div[1]/child::div[2]/child::div[1]/descendant::div[2]
+
+.XPath for parent element:        //div[@id='reg_form_box']
+.XPath to get first child:        //div[@id='reg_form_box']/child::div[1]
+.XPath to get 1st child of first child:             //div[@id='reg_form_box']/child::div[1]/child::div[1]
+.XPath to get 2nd child of 1st child of first child://div[@id='reg_form_box']/child::div[1]/child::div[1]/child::div[2]
+.XPath to get 1st child of 2nd child of 1st child of first child://div[@id='reg_form_box']/child::div[1]/child::div[1]/child::div[2]/child::div[1]
+.XPath to get 2nd descendant of 1st child of 2nd child of 1st child of first child://div[@id='reg_form_box']/child::div[1]/child::div[1]/child::div[2]/child::div[1]/descendant::div[2]
+
+Note: + childs are at same level
+      - descendants are at different level(goes down)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
