@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14630" started-at="2017-09-21T20:54:34Z" finished-at="2017-09-21T20:54:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14630" started-at="2017-09-21T20:54:34Z" finished-at="2017-09-21T20:54:49Z">
+      <class name="com.test.automation.uiAutomation.signinpage.signInToCreateAccount">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.test.automation.uiAutomation.signinpage.signInToCreateAccount@754ba872]" name="testSetUp" is-config="true" duration-ms="12051" started-at="2017-09-22T08:54:34Z" finished-at="2017-09-22T08:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="verifySignInToCreateAccount()[pri:0, instance:com.test.automation.uiAutomation.signinpage.signInToCreateAccount@754ba872]" name="verifySignInToCreateAccount" duration-ms="2559" started-at="2017-09-22T08:54:46Z" finished-at="2017-09-22T08:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInToCreateAccount -->
+      </class> <!-- com.test.automation.uiAutomation.signinpage.signInToCreateAccount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

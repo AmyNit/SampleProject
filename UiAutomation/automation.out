@@ -1,0 +1,32 @@
+2017-09-21 17:33:19 INFO  TC001_verifyLoginWithInvalidCredentials:30 -*****starting verifyLoginWithInvalidCredentials test*******
+2017-09-21 17:33:19 INFO  HomePage:47 -clicking in SignIn and object is:-[[FirefoxDriver: firefox on ANY (7abccb75-e51d-4abd-ade7-1dea226f2d1c)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 17:33:21 INFO  HomePage:50 -Entering email address:-hello@gmail.com Object is:-[[FirefoxDriver: firefox on ANY (7abccb75-e51d-4abd-ade7-1dea226f2d1c)] -> xpath: .//*[@id='email']]
+2017-09-21 17:33:21 INFO  HomePage:53 -Entering password:-2618723object is:-[[FirefoxDriver: firefox on ANY (7abccb75-e51d-4abd-ade7-1dea226f2d1c)] -> xpath: .//*[@id='passwd']]
+2017-09-21 17:33:21 INFO  HomePage:56 -clicking on submit button and object is:-[[FirefoxDriver: firefox on ANY (7abccb75-e51d-4abd-ade7-1dea226f2d1c)] -> id: SubmitLogin]
+2017-09-21 17:33:23 INFO  HomePage:64 -error message:-Authentication failed.
+2017-09-21 17:33:23 INFO  TC001_verifyLoginWithInvalidCredentials:35 -*****starting verifyLoginWithInvalidCredentials test*******
+2017-09-21 17:36:54 INFO  TC001_verifyLoginWithInvalidCredentials:30 -*********starting verifyLoginWithInvalidCredentials test************
+2017-09-21 17:36:54 INFO  HomePage:47 -clicking in SignIn and object is:-[[FirefoxDriver: firefox on ANY (a2b1395d-d564-4a5b-8152-b6e71a4d9321)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 17:36:56 INFO  HomePage:50 -Entering email address:-hello@gmail.com Object is:-[[FirefoxDriver: firefox on ANY (a2b1395d-d564-4a5b-8152-b6e71a4d9321)] -> xpath: .//*[@id='email']]
+2017-09-21 17:36:56 INFO  HomePage:53 -Entering password:-2618723object is:-[[FirefoxDriver: firefox on ANY (a2b1395d-d564-4a5b-8152-b6e71a4d9321)] -> xpath: .//*[@id='passwd']]
+2017-09-21 17:36:57 INFO  HomePage:56 -clicking on submit button and object is:-[[FirefoxDriver: firefox on ANY (a2b1395d-d564-4a5b-8152-b6e71a4d9321)] -> id: SubmitLogin]
+2017-09-21 17:36:58 INFO  HomePage:64 -error message:-Authentication failed.
+2017-09-21 17:36:58 INFO  TC001_verifyLoginWithInvalidCredentials:35 -**********Finished verifyLoginWithInvalidCredentials test***********
+2017-09-21 18:04:26 INFO  signInToCreateAccount:31 -*****starting verifySignInToCreateAccount test******
+2017-09-21 18:04:27 INFO  signInPage:37 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (42401392-41e3-4dc0-aecc-5888d9f4cf4d)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 18:40:36 INFO  signInToCreateAccount:31 -*****starting verifySignInToCreateAccount test******
+2017-09-21 18:40:58 INFO  signInPage:37 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (66fd4e77-20be-4c05-ad6e-f2efef701055)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 18:43:13 INFO  signInToCreateAccount:31 -*****starting verifySignInToCreateAccount test******
+2017-09-21 18:43:13 INFO  signInPage:38 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (a639c305-8177-401e-96c3-12628058e4eb)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 18:48:52 INFO  signInToCreateAccount:31 -*****starting verifySignInToCreateAccount test******
+2017-09-21 18:48:52 INFO  signInPage:38 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (4218ae6c-26f0-4b3b-8798-79decd909a32)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 18:55:24 INFO  signInToCreateAccount:31 -*****starting verifySignInToCreateAccount test******
+2017-09-21 18:55:24 INFO  signInPage:38 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (3fc76e3b-fbaa-4894-9134-3dc239455d6e)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 19:30:34 INFO  signInToCreateAccount:30 -*****starting verifySignInToCreateAccount test******
+2017-09-21 19:30:34 INFO  signInPage:38 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (bd0d19ab-9d22-4091-b214-fb3236b62059)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 19:35:31 INFO  signInToCreateAccount:30 -*****starting verifySignInToCreateAccount test******
+2017-09-21 19:35:31 INFO  signInPage:38 -clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (4c0e200a-3414-4d59-8a1e-537476021c69)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-21 19:38:53 INFO  signInToCreateAccount:30 - *****starting verifySignInToCreateAccount test******
+2017-09-21 19:38:53 INFO  signInPage:38 - clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (e706cf70-a86e-4224-b2b8-28fe03e58302)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-09-22 08:54:46 INFO  signInToCreateAccount:30 - *****starting verifySignInToCreateAccount test******
+2017-09-22 08:54:46 INFO  signInPage:38 - clicking on signIn button and the object is:-[[FirefoxDriver: firefox on ANY (fcd6f3e1-c986-4a58-a681-73660bf72407)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
