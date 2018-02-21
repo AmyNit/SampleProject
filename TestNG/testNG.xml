@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="basicAnnotations">
+<test name="basicAnnoations">
+<classes>
+<!-- <class name="testNG.Annotations"></class> -->
+</classes>
+</test>
+
+
+<!-- <test name="groupTests"> -->
+<!-- <groups> -->
+<!-- <run> -->
+<!-- <include name="database"></include> -->
+<!-- </run> -->
+<!-- </groups> -->
+<!-- <classes> -->
+<!-- <class name="testNG.GroupTest"></class> -->
+<!-- </classes> -->
+<!-- </test> -->
+
+<test name="dependsOnTest">
+<classes>
+<class name="testNG.DependsOnTest"></class>
+</classes>
+</test>
+
+<parameter name="username" value="amy"></parameter>
+<parameter name="password" value="123"></parameter>
+<test name="ParametersTest">
+<classes>
+<class name="testNG.ParametersInTestNG"></class>
+</classes>
+</test>
+
+
+
+
+
+
+
+
+</suite>
