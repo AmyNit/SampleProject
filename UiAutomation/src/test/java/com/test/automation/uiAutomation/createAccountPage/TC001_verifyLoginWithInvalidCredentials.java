@@ -17,7 +17,7 @@ public class TC001_verifyLoginWithInvalidCredentials extends TestBase {
 
 	@BeforeTest
 
-	public void testSetUp() {
+	public void testSetUp1() {
 
 		init();
 	
