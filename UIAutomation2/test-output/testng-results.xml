@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13987" started-at="2017-09-25T21:53:13Z" finished-at="2017-09-25T21:53:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13987" started-at="2017-09-25T21:53:13Z" finished-at="2017-09-25T21:53:27Z">
+      <class name="com.test.automation.UIAutomation2.signinPage.TC001_genericmethods">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.test.automation.UIAutomation2.signinPage.TC001_genericmethods@31ef45e3]" name="testSetUp" is-config="true" duration-ms="13568" started-at="2017-09-26T10:53:13Z" finished-at="2017-09-26T10:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="genericMethodTest()[pri:0, instance:com.test.automation.UIAutomation2.signinPage.TC001_genericmethods@31ef45e3]" name="genericMethodTest" duration-ms="397" started-at="2017-09-26T10:53:27Z" finished-at="2017-09-26T10:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genericMethodTest -->
+      </class> <!-- com.test.automation.UIAutomation2.signinPage.TC001_genericmethods -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
