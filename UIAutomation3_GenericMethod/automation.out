@@ -1,0 +1,22 @@
+2017-09-26 12:08:01 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:08:53 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-32R412D'
+2017-09-26 12:09:49 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-32R412D'
+2017-09-26 12:16:35 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-32R412D'
+2017-09-26 12:17:23 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:18:16 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:20:56 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:22:17 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:23:00 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-32R412D'
+2017-09-26 12:23:42 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:28:41 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:29:20 INFO  ProductDetailsPage:37 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:34:13 INFO  ProductDetailsPage:38 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:35:35 INFO  ProductDetailsPage:38 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:37:07 INFO  ProductDetailsPage:38 - clicking on 'SONY KLV-32R412D'
+2017-09-26 12:39:23 INFO  ProductDetailsPage:38 - clicking on 'SONY KLV-22P413D'
+2017-09-26 12:42:44 INFO  ProductDetailsPage:41 - clicked on SONY KLV-22P413D
+2017-09-26 16:25:09 INFO  ProductDetailsPage:62 - clicked on fb link and object is:-[[FirefoxDriver: firefox on ANY (b474d7b3-7660-4f8d-9ced-450869b66c45)] -> xpath: html/body/footer/div[2]/div/div/div[3]/div/ul/li[1]/a]
+2017-09-26 16:39:09 INFO  ProductDetailsPage:62 - clicked on fb link and object is:-[[FirefoxDriver: firefox on ANY (28fbc6c5-4037-4582-9641-0f76fcd97ad8)] -> xpath: html/body/footer/div[2]/div/div/div[3]/div/ul/li[1]/a]
+2017-09-26 16:40:19 INFO  ProductDetailsPage:62 - clicked on fb link and object is:-[[FirefoxDriver: firefox on ANY (3d3c300c-ccb7-471c-924a-1fed9f888a52)] -> xpath: html/body/footer/div[2]/div/div/div[3]/div/ul/li[1]/a]
+2017-09-26 16:41:36 INFO  ProductDetailsPage:62 - clicked on fb link and object is:-[[FirefoxDriver: firefox on ANY (3f287010-12f9-412f-8a4c-1c5bed3387f6)] -> xpath: html/body/footer/div[2]/div/div/div[3]/div/ul/li[1]/a]
+2017-09-26 16:42:15 INFO  ProductDetailsPage:62 - clicked on fb link and object is:-[[FirefoxDriver: firefox on ANY (02a139dc-86a6-4f92-8733-967ffe80bb2d)] -> xpath: html/body/footer/div[2]/div/div/div[3]/div/ul/li[1]/a]
