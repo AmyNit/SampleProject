@@ -11,9 +11,9 @@ import org.openqa.selenium.support.PageFactory;
 public class Signinpage {
 
 	public static final Logger log = Logger.getLogger(Signinpage.class.getName());
-	
-	public final String clothing="Clothing";
-	public final String newIn="New In";
+
+	public final String clothing = "Clothing";
+	public final String newIn = "New In";
 
 	WebDriver wd;
 
@@ -36,18 +36,12 @@ public class Signinpage {
 
 	public void clickOnNavigationMenu(String menuname) {
 
-		// a[contains(text(),'Clothing') and @aria-expanded='false']
-
 		log.info("clicking on " + menuname + " navigation menu");
 		wd.findElement(By.xpath("//a[contains(text(),'" + menuname + "') and @aria-expanded='false']")).click();
 
 	}
 
 	public void clickOnNewIninClothing(String product) {
-
-		// a[contains(text(),'Clothing') and
-		// @aria-selected='true']/following-sibling::div/ul/child::li/a[contains(text(),'New
-		// In')]
 
 		log.info("clicking on " + product + " in clothing");
 		wd.findElement(By
@@ -58,19 +52,11 @@ public class Signinpage {
 
 	public void clickOnNewIninShoes(String product) {
 
-		// a[contains(text(),'Clothing') and
-		// @aria-selected='true']/following-sibling::div/child::ul/child::li/child::a[contains(text(),'All
-		// Clothing')]
-
 		log.info("clicking on " + product + " in clothing");
 		wd.findElement(By
 				.xpath("//a[contains(text(),'Clothing') and @aria-selected='true']/following-sibling::div/child::ul/child::li/child::a[contains(text(),"
 						+ product + "')]"));
 
 	}
-
-	// a[contains(text(),'Shoes') and
-	// @aria-expanded='true']/following-sibling::div/child::ul/child::li/child::a[contains(text(),'New
-	// In')]
 
 }
