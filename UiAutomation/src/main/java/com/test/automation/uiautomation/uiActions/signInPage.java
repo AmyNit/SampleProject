@@ -12,47 +12,22 @@ public class signInPage {
 
 	WebDriver wd;
 
-@FindBy(xpath=".//*[@id='header']/div[2]/div/div/nav/div[1]/a")
-WebElement signInButton;
+	@FindBy(xpath = ".//*[@id='header']/div[2]/div/div/nav/div[1]/a")
+	WebElement signInButton;
 
+	public signInPage(WebDriver wd) {
 
+		this.wd = wd;
+		PageFactory.initElements(wd, this);
 
+	}
 
+	public void clickSignIn() {
 
+		log.info("clicking on signIn button and the object is:-" + signInButton.toString());
 
+		signInButton.click();
 
-
-
-
-public signInPage(WebDriver wd){
-	
-	this.wd=wd;
-	PageFactory.initElements(wd, this); 
-		
-	
-}
-
-public void clickSignIn(){
-	
-	
-	log.info("clicking on signIn button and the object is:-"+signInButton.toString());
-	
-	signInButton.click();
-	
-	
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
+	}
 
 }

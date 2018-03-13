@@ -10,9 +10,9 @@ import com.test.automation.uiautomation.testBase.TestBase;
 import com.test.automation.uiautomation.uiActions.HomePage;
 
 public class TC001_verifyLoginWithInvalidCredentials extends TestBase {
-	
-	public static final Logger log=Logger.getLogger(TC001_verifyLoginWithInvalidCredentials.class.getName());
-	
+
+	public static final Logger log = Logger.getLogger(TC001_verifyLoginWithInvalidCredentials.class.getName());
+
 	HomePage homepage;
 
 	@BeforeTest
@@ -20,20 +20,19 @@ public class TC001_verifyLoginWithInvalidCredentials extends TestBase {
 	public void testSetUp1() {
 
 		init();
-	
+
 	}
 
 	@Test
-	
-	public void verifyLoginWithInvalidCredentials(){
-		
+
+	public void verifyLoginWithInvalidCredentials() {
+
 		log.info("*********starting verifyLoginWithInvalidCredentials test************");
-		homepage=new HomePage(wd);
+		homepage = new HomePage(wd);
 		homepage.loginToApplication("hello@gmail.com", "2618723");
-		Assert.assertEquals(homepage.verifyErrormsgonInvalidLogin(),"Authentication failed.");
-		
+		Assert.assertEquals(homepage.verifyErrormsgonInvalidLogin(), "Authentication failed.");
+
 		log.info("**********Finished verifyLoginWithInvalidCredentials test***********");
-		}
-	
-	
+	}
+
 }

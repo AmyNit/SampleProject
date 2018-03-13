@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
 
-	public static final Logger log=Logger.getLogger(TestBase.class.getName());
+	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 
 	public WebDriver wd;
 	String url = "http://automationpractice.com/index.php";
@@ -19,7 +19,7 @@ public class TestBase {
 
 		selectBrowser(browser);
 		getUrl(url);
-		String log4jConfPath="log4j.properties";
+		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
 	}
 
@@ -28,17 +28,17 @@ public class TestBase {
 		if (browser.equalsIgnoreCase("firefox")) {
 
 			System.getProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
-			log.info("creating object of"+browser);
+			log.info("creating object of" + browser);
 			wd = new FirefoxDriver();
 		}
 	}
 
 	public void getUrl(String url) {
 
-		log.info("Navigating to"+url);
+		log.info("Navigating to" + url);
 		wd.get(url);
 		wd.manage().window().maximize();
-		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); 
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 
 }

@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 import com.test.automation.uiautomation.testBase.TestBase;
 import com.test.automation.uiautomation.uiActions.signInPage;
 
-public class signInToCreateAccount extends TestBase{
-	
-	public static final Logger log=Logger.getLogger(signInToCreateAccount.class.getName());
-	
+public class signInToCreateAccount extends TestBase {
+
+	public static final Logger log = Logger.getLogger(signInToCreateAccount.class.getName());
+
 	signInPage signinpage;
 
 	@BeforeTest
@@ -18,17 +18,17 @@ public class signInToCreateAccount extends TestBase{
 	public void testSetUp() {
 
 		init();
-	
+
 	}
 
 	@Test
-	
-	public void verifySignInToCreateAccount(){
-		
-	signinpage=new signInPage(wd);
-	
-	log.info("*****starting verifySignInToCreateAccount test******" );
-	signinpage.clickSignIn();	
 
-}
+	public void verifySignInToCreateAccount() {
+
+		signinpage = new signInPage(wd);
+
+		log.info("*****starting verifySignInToCreateAccount test******");
+		signinpage.clickSignIn();
+
+	}
 }
