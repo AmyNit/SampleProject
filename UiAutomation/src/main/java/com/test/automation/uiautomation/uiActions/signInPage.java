@@ -27,7 +27,7 @@ WebElement signInButton;
 public signInPage(WebDriver wd){
 	
 	this.wd=wd;
-	PageFactory.initElements(wd, this); //initializing all web elements
+	PageFactory.initElements(wd, this); 
 		
 	
 }

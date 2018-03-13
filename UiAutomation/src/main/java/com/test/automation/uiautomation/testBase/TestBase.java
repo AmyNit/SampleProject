@@ -38,7 +38,7 @@ public class TestBase {
 		log.info("Navigating to"+url);
 		wd.get(url);
 		wd.manage().window().maximize();
-		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); //waiting for all web elements to load
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); 
 	}
 
 }
