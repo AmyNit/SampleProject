@@ -13,42 +13,34 @@ import pageActions.ProductDetailsPage;
 import testBase.TestBase;
 
 public class TC002_verifyMultipleWindows extends TestBase {
-	public static final Logger log=Logger.getLogger(TC001_selectProducts.class.getName());
-
+	public static final Logger log = Logger.getLogger(TC001_selectProducts.class.getName());
 
 	ProductDetailsPage productdetails;
 
 	@BeforeTest
 
-	public void setUp(){
+	public void setUp() {
 		init();
-		productdetails=new ProductDetailsPage(wd);
+		productdetails = new ProductDetailsPage(wd);
 	}
-		
+
 	@Test
 
-	public void test() throws InterruptedException{
-		
-	
+	public void test() throws InterruptedException {
+
 		ScrollDown();
 		productdetails.clickFblink();
-		
+
 		Iterator<String> itr = getallWindows();
-		
-		List<String> windowids=new ArrayList<String>();
-		while(itr.hasNext()){
-		
+
+		List<String> windowids = new ArrayList<String>();
+		while (itr.hasNext()) {
+
 			windowids.add(itr.next());
 		}
-			
-        wd.switchTo().window(windowids.get(0));
-        
-       // wd.switchTo().window(windowids.get(1));
-			
-		}
-		
-		
-		
-	}
-		
 
+		wd.switchTo().window(windowids.get(0));
+
+	}
+
+}

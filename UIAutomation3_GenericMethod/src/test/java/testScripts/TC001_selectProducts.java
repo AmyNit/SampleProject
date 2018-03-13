@@ -11,31 +11,26 @@ import junit.framework.Assert;
 import pageActions.ProductDetailsPage;
 import testBase.TestBase;
 
-public class TC001_selectProducts extends TestBase{
+public class TC001_selectProducts extends TestBase {
 
-	
-public static final Logger log=Logger.getLogger(TC001_selectProducts.class.getName());
+	public static final Logger log = Logger.getLogger(TC001_selectProducts.class.getName());
 
+	ProductDetailsPage productdetails;
 
-ProductDetailsPage productdetails;
+	@BeforeTest
 
-@BeforeTest
+	public void setUp() {
+		init();
+		productdetails = new ProductDetailsPage(wd);
+	}
 
-public void setUp(){
-	init();
-	productdetails=new ProductDetailsPage(wd);
-}
-	
-@Test
+	@Test
 
-public void test() throws InterruptedException{
-	
-productdetails.selectProduct(productdetails.SONYKLV22P413D);
-	
-productdetails.selectProduct(productdetails.SONYKLV32R412D);	
-	
-	
-	
-	
-}	
+	public void test() throws InterruptedException {
+
+		productdetails.selectProduct(productdetails.SONYKLV22P413D);
+
+		productdetails.selectProduct(productdetails.SONYKLV32R412D);
+
+	}
 }

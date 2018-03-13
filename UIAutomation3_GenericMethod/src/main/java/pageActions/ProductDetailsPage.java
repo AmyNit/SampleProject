@@ -29,8 +29,8 @@ public class ProductDetailsPage extends TestBase {
 
 	@FindBy(xpath = "html/body/footer/div[2]/div/div/div[3]/div/ul/li[3]/a")
 	WebElement googleplus;
-	
-	@FindBy(xpath="html/body/header/div[2]/div/div[1]/a")
+
+	@FindBy(xpath = "html/body/header/div[2]/div/div[1]/a")
 	WebElement newwindowmsg;
 
 	public ProductDetailsPage(WebDriver wd) {
@@ -57,44 +57,36 @@ public class ProductDetailsPage extends TestBase {
 	}
 
 	public void clickFblink() {
-     
+
 		facebooklink.click();
-		log.info("clicked on fb link and object is:-"+facebooklink.toString());
+		log.info("clicked on fb link and object is:-" + facebooklink.toString());
 	}
 
 	public void clicktwitterlink() {
 
 		twitterlink.click();
-		log.info("clicked on twitterlink and object is :-"+twitterlink.toString());
+		log.info("clicked on twitterlink and object is :-" + twitterlink.toString());
 	}
 
 	public void clickGooglepluslink() {
- 
+
 		googleplus.click();
-	    
-		log.info("cliked on google plus link and object is :- "+googleplus.toString());
+
+		log.info("cliked on google plus link and object is :- " + googleplus.toString());
 	}
-	
-	public boolean verifynewwindowmsg(){
-		
-		
+
+	public boolean verifynewwindowmsg() {
+
 		try {
 			newwindowmsg.isDisplayed();
-			
-			log.info("new window msg is displayed and object is:-"+newwindowmsg.toString());
+
+			log.info("new window msg is displayed and object is:-" + newwindowmsg.toString());
 			return true;
 		} catch (Exception e) {
-		
+
 			return false;
 		}
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
 
 }
