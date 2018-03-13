@@ -23,7 +23,7 @@ public class CountNoOfLinks {
 			List<WebElement> links=wd.findElements(By.xpath("//a"));
 			
 			int linkCount=links.size();
-			System.out.println("linkCount="+linkCount);
+			//System.out.println("linkCount="+linkCount);
 			
 			Assert.assertEquals(links.size(),149);
 	

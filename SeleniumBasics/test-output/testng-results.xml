@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18251" started-at="2018-01-27T06:48:44Z" finished-at="2018-01-27T06:49:02Z">
+  <suite name="Default suite" duration-ms="30869" started-at="2018-02-28T01:27:32Z" finished-at="2018-02-28T01:28:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18251" started-at="2018-01-27T06:48:44Z" finished-at="2018-01-27T06:49:02Z">
-      <class name="SeleniumBasics.SeleniumBasics.CountNoOfLinks">
-        <test-method status="PASS" signature="countLinksTest()[pri:0, instance:SeleniumBasics.SeleniumBasics.CountNoOfLinks@371a67ec]" name="countLinksTest" duration-ms="18208" started-at="2018-01-27T19:48:44Z" finished-at="2018-01-27T19:49:02Z">
+    <test name="Default test" duration-ms="30869" started-at="2018-02-28T01:27:32Z" finished-at="2018-02-28T01:28:03Z">
+      <class name="SeleniumBasics.SeleniumBasics.PriceFilter">
+        <test-method status="PASS" signature="Test()[pri:0, instance:SeleniumBasics.SeleniumBasics.PriceFilter@371a67ec]" name="Test" duration-ms="30838" started-at="2018-02-28T14:27:32Z" finished-at="2018-02-28T14:28:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- countLinksTest -->
-      </class> <!-- SeleniumBasics.SeleniumBasics.CountNoOfLinks -->
+        </test-method> <!-- Test -->
+      </class> <!-- SeleniumBasics.SeleniumBasics.PriceFilter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -18,12 +18,6 @@ public class MyAccountHomePage {
 	public By myAccountLabel=By.xpath(".//*[@id='center_column']/h1");
 	
 	
-	
-	
-	
-	
-	
-	
 	public MyAccountHomePage(WebDriver wd){
 		
 		this.wd=wd;

@@ -21,6 +21,7 @@ public class alertTest {
 		
 		wd.get("");
 		Alert alert=wd.switchTo().alert();
+		
 		//alert().accept();
 		//alert().dismiss();
 			
@@ -35,8 +36,9 @@ public class alertTest {
 	Alert alert=wd.switchTo().alert();
 	
 	String msg=alert.getText();
-	System.out.println(msg);
+	//System.out.println(msg);
 	Assert.assertEquals(msg, "press a button");
+
 	
 	alert.dismiss();
 	

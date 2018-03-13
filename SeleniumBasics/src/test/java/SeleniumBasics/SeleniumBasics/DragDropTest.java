@@ -10,32 +10,28 @@ import org.testng.annotations.Test;
 public class DragDropTest {
 
 	WebDriver wd;
-	
-@Test
-	
-	public void dropDownTest(){
-	
-	System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ "\\src\\test\\java\\drivers\\geckodriver.exe");   
-	WebDriver wd=new FirefoxDriver();
-	
-	wd.get("http://jqueryui.com/droppable/");
-	
-	wd.switchTo().frame(wd.findElement(By.className("demo-frame")));
-	
-	WebElement source=wd.findElement(By.xpath(".//*[@id='draggable']"));
-	WebElement dest=wd.findElement(By.xpath(".//*[@id='droppable']"));
-	
-	Actions actions=new Actions(wd);
-	
-	actions.dragAndDrop(source, dest);
-	
-	actions.build().perform();
-	
-	
-	
-	
-}	
-	
-	
-	
+
+	@Test
+
+	public void dropDownTest() {
+
+		System.setProperty("webdriver.gecko.driver",
+				System.getProperty("user.dir") + "\\src\\test\\java\\drivers\\geckodriver.exe");
+		WebDriver wd = new FirefoxDriver();
+
+		wd.get("http://jqueryui.com/droppable/");
+
+		wd.switchTo().frame(wd.findElement(By.className("demo-frame")));
+
+		WebElement source = wd.findElement(By.xpath(".//*[@id='draggable']"));
+		WebElement dest = wd.findElement(By.xpath(".//*[@id='droppable']"));
+
+		Actions actions = new Actions(wd);
+
+		actions.dragAndDrop(source, dest);
+
+		actions.build().perform();
+
+	}
+
 }

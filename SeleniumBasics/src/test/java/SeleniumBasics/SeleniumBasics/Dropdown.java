@@ -8,34 +8,25 @@ import org.testng.annotations.Test;
 
 public class Dropdown {
 
-@Test
-	
-	public void dropDownTest(){
-	
-	System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ "\\src\\test\\java\\drivers\\geckodriver.exe");   
-	WebDriver wd=new FirefoxDriver();
-	
-	wd.get("https://www.facebook.com/");
-	
-	Select day=new Select(wd.findElement(By.xpath(".//*[@id='day']")));
-	day.selectByValue("1");
-	
-	Select month=new Select(wd.findElement(By.xpath(".//*[@id='month']")));
-	month.selectByVisibleText("Feb");
-	
-	Select year=new Select(wd.findElement(By.xpath(".//*[@id='year']")));
-	year.selectByIndex(1);
-	
-	
-	
-	
-	
-	
-}
-	
-	
-	
-	
-	
-	
+	@Test
+
+	public void dropDownTest() {
+
+		System.setProperty("webdriver.gecko.driver",
+		System.getProperty("user.dir") + "\\src\\test\\java\\drivers\\geckodriver.exe");
+		WebDriver wd = new FirefoxDriver();
+
+		wd.get("https://www.facebook.com/");
+
+		Select day = new Select(wd.findElement(By.xpath(".//*[@id='day']")));
+		day.selectByValue("1");
+
+		Select month = new Select(wd.findElement(By.xpath(".//*[@id='month']")));
+		month.selectByVisibleText("Feb");
+
+		Select year = new Select(wd.findElement(By.xpath(".//*[@id='year']")));
+		year.selectByIndex(1);
+
+	}
+
 }
