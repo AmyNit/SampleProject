@@ -56,7 +56,6 @@ public class HomePage {
 		log.info("clicking on submit button and object is:-"+submitButton.toString());
 		submitButton.click();	
 		
-		
 	}
 	
 	public String verifyErrormsgonInvalidLogin(){
