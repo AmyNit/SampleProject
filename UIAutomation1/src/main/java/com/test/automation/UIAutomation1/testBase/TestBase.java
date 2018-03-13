@@ -42,20 +42,18 @@ public class TestBase {
 
 	public WebDriver wd;
 	public WebDriverWait wait;
-	
+
 	String url = "http://automationpractice.com/index.php";
 	String browser = "firefox";
 	ExcelReader excel;
 	public Properties prop1 = new Properties();
-	
+
 	public EventFiringWebDriver driver;
 	public WebEventListener eventListener;
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public ITestResult result;
-
-	
 
 	public EventFiringWebDriver getDriver() {
 
@@ -109,9 +107,7 @@ public class TestBase {
 					System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 			wd = new ChromeDriver();
 
-			driver = new EventFiringWebDriver(wd); // EventFiringWebDriver will
-													// help to register
-													// WebEventListener
+			driver = new EventFiringWebDriver(wd);
 			eventListener = new WebEventListener();
 			driver.register(eventListener);
 
@@ -120,9 +116,7 @@ public class TestBase {
 			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 			wd = new InternetExplorerDriver();
 
-			driver = new EventFiringWebDriver(wd); // EventFiringWebDriver will
-													// help to register
-													// WebEventListener
+			driver = new EventFiringWebDriver(wd);
 			eventListener = new WebEventListener();
 			driver.register(eventListener);
 
@@ -194,22 +188,22 @@ public class TestBase {
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 
 			test.log(LogStatus.ERROR, result.getName(), "test failed:-" + result.getThrowable());
-			test.log(LogStatus.FAIL,test.addScreenCapture(captureScreen("")));
+			test.log(LogStatus.FAIL, test.addScreenCapture(captureScreen("")));
 		} else if (result.getStatus() == ITestResult.STARTED) {
 
 			test.log(LogStatus.INFO, result.getName(), "test started");
 		}
 
 	}
-	
+
 	public String captureScreen(String fileName) {
 
-		if(fileName==""){
-			fileName="blank";
+		if (fileName == "") {
+			fileName = "blank";
 		}
-		
-		File destfile=null;
-		
+
+		File destfile = null;
+
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 
@@ -233,36 +227,35 @@ public class TestBase {
 		return destfile.toString();
 
 	}
-	
-	
+
 	@AfterMethod()
-	
-	public void afterMethod(){
-		
-		getResult(result); // check whether method passed, failed or skipped
-		
+
+	public void afterMethod() {
+
+		getResult(result);
+
 	}
-	
+
 	@BeforeMethod()
-	
-	public void beforeMethod(Method result){
-		
-		test=extent.startTest(result.getName());  // gives the name of method
-		test.log(LogStatus.INFO, result.getName()+"test started");	
+
+	public void beforeMethod(Method result) {
+
+		test = extent.startTest(result.getName());
+		test.log(LogStatus.INFO, result.getName() + "test started");
 	}
-	
-	@AfterClass(alwaysRun=true)
-	
-	public void endTest(){
+
+	@AfterClass(alwaysRun = true)
+
+	public void endTest() {
 		closeBrowser();
 	}
-public void closeBrowser(){
-		
+
+	public void closeBrowser() {
+
 		wd.quit();
 		log.info("browser closed");
 		extent.endTest(test);
 		extent.flush();
 	}
-
 
 }

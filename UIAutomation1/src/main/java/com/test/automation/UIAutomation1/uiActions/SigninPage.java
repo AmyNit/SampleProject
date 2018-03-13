@@ -38,13 +38,9 @@ public class SigninPage extends TestBase {
 	
 public void  log(String data){
 		
-		log.info(data);   //print in console,print in log file
-		Reporter.log(data);  //Reporter.log is a TestNG class which will print data in emailable report.html
-	}	
-	
-	
-	
-	
+		log.info(data);   
+		Reporter.log(data);  
+}
 	
 	
 	

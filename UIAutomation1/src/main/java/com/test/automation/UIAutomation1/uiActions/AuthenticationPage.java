@@ -76,7 +76,6 @@ public class AuthenticationPage extends TestBase  {
 	
 	public boolean verifyAuthenticationErrormsg(){
 		
-		//return authenticationFailedmsg.getText();
 		
 		
 		
@@ -98,8 +97,8 @@ public class AuthenticationPage extends TestBase  {
 	
 public void  log(String data){
 		
-		log.info(data);   //print in console,print in log file
-		Reporter.log(data);  //Reporter.log is a TestNG class which will data in emailable report.html
+		log.info(data);   
+		Reporter.log(data);  
 	}
 	
 	
